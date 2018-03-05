@@ -1,10 +1,25 @@
-# This Map Should Deal with a Historical Topic You Care About
+# Do spaces
 
-Your first task will be to locate some real places.  You can get the precise locations at various services, e.g [latlong.net](http://www.latlong.net/).
+
 
 Then add those places to the marker array in [../js/maps-setup.js](../js/maps-setup.js) (see instructions there).
 
-replace this text and the text with your essay. But be sure not to eliminate the html elements that
+
+In Japan, like most places, there have been many different regimes and so-called 'eras' . Another thing we know is that governments when changing regimes often change the architecture, to define the space in which they reign. See china creating neighborhood squares where little communities lived inside the squares and this was so that the overseers of each block could keep a better look on the citizens. you can technically define japan by its economical eras, from feudalism to mercantilism, imperialism.
+okay so what iam i going to do i want to mark places where there used to be buildings that are now destroyed, and aditionally what has REPLACED THEM.
+NUCLEAR BOMBS AND WHAT THEY HAVE DONE
+SHOULD I ALSO CONNECT THE DESTRUCTION JUST BY EARTHWUAKE AND HAVE THEM INA DIF COLOR.
+WEHAT WE LOSE TO showMarkers.
+THEN THERES THE CULTURAL DESTRUCTION OF ISIL
+each marker will show:
+a building or structure that was destroyed. the amount of lives lost. the ones who destroyed the building. picture of before and after.the amount of money spent on recovering it. what is there NOW
+
+
+
+war manifests itself in the destruction it leaves behind. Some nations and organizations have chosen to take that destruction and make it eternal, and in other cases, a structure is lost forever.
+though there are many examples, here are the ones in which i believe relate the most to my thesis:
+explosions, 
+ But be sure not to eliminate the html elements that
 are contained inside this textarea, or [your map won't work at all!][1] [1](#one)
 <figure>
 ![](https://upload.wikimedia.org/wikipedia/commons/a/ab/Lolcat_in_folder.jpg "this is the alt text")<figcaption>caption</figcaption>

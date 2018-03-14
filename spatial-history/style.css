@@ -1,6 +1,12 @@
 /* This is a very simple CSS setup that shows the size of the relevant divs and -- important! -- sets the size of the map container */
 
 /* add any styling for the central column here */
+img {
+  height: 10px;
+  width: 20px;
+  border: blue, 2px, solid;
+}
+
 div.container {
 }
 

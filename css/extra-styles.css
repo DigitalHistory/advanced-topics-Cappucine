@@ -19,18 +19,20 @@ div.container {
 }
 
  div#map_legend img {
-  max-height: 200px;
-  width:auto;
+   height: 100px;
+   width:auto;
+display:inline-block;
+float:left;
     }
 
 
 div#mapcontainer {
   font-family:Arial, sans-serif;
   font-size:11px;
-  border:4px solid #f6acac;
-  width:90%;
+  border:4px solid #629eda;
+  width:100%;
   float:left;
-  margin: 10px;
+  margin: 5px  0px  5px  0px;
 }
 
 /* you can change the size of the map here if you want you can even
@@ -44,18 +46,18 @@ div#map_canvas {
 /* this is the legend div. Can you make it into a right sidebar? you may
 have to add some extra css to the mapcontainer div */
 div#map_legend {
-     width:90%;
+     width:100%;
     float:left;
-    font: 12px, #8b182f;
-    border: 4px  #f6acac solid;
-    margin: 5px;
+    font: 10px, #8b182f;
+    border: 4px  #629eda solid;
 
+display:inline-block;
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes. Advisable! */
 div#map_legend h1, div#map_legend h3 {
-  font:   1px, #8b182f;
+  font:   1px, #8b1bbb;
 
 }
 
@@ -77,12 +79,10 @@ button.rounded {
   border: 1px black solid;
 }
 button#hide {
-  text: black;
-  background-color:#7c0e0e;
+  background-color:#8fe594;
 }
 button#show {
-  text: black;
-  background-color:#7c0e0e;
+  background-color:#8fe594;
 }
 
 div.cleared {
@@ -98,6 +98,10 @@ div.cleared {
 div#map_canvas h1 {
 
 }
+div.contentdiv {
+ height:300px;
+ width:50px;
+}
 
 div.address  {
 
@@ -109,7 +113,7 @@ div.description {
 }
 
 div.gm-style-iw {
-    max-height: 75px;
+    max-height: 150px;
 }
 div.gm-style-iw img {
     max-width: 75% !important;

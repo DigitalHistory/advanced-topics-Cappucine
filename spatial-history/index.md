@@ -1,27 +1,27 @@
 # Hiroshima: Hypo-centre of Peace?
 
-War manifests itself in what it takes away from this world, and after it ends, victors and losers try to get back what was stolen, by erecting structures of acknowledgment. But is it possible to solidify our mistakes in the form of a city to make sure they never happen again?
+War manifests itself in what it takes away from this world, and after it ends, victors and losers try to get back what was stolen by erecting structures of acknowledgment. But is it possible to solidify our mistakes in the form of a city to make sure they never happen again?
 
 The first time nuclear weapons had ever been used in warfare was by the United States in the bombing of Hiroshima and Nagasaki on August 6th and 9th, 1945. Hiroshima, due to its flat topography, was completely levelled. An estimated 200,000 people died, not counting those affected by radiation. The bombing has remained in memory, history and in the rebuilt city itself. From ground zero, a one-mile radius was completely destroyed apart from reinforced concrete buildings like the __Genbaku Dome__ (Atomic Bomb Dome), and the total reach of the explosion was a five-mile radius.[1](#one)
 
-Post-war Hiroshima now represents a city of peace. Its reconstruction since the early years has been purposefully dedicated towards creating a city-wide monument of peace, remembrance, and a nuke-free world. This is far from a casual belief; it is an official ideology adopted by the city of Hiroshima, the nation, and those who visit daily. Furthermore, the physical space has been carefully designed to reflect that ideology, with attention to location and proximity. Though this topic has been researched thoroughly, it is necessary to visualize how the reconstruction of Hiroshima has occurred.
+Post-war Hiroshima now represents a city of peace. Its reconstruction since the early years has been purposefully dedicated towards creating a city-wide monument of peace, remembrance, and a nuke-free world. This is far from a casual belief; it is an official ideology adopted by the city of Hiroshima, the nation, and those who visit daily.[18](#18) Furthermore, the physical space has been carefully designed to reflect that ideology, with attention to location and proximity. Though this topic has been researched thoroughly, it is necessary to visualize how the reconstruction of Hiroshima has occurred.
 
 
 
-<h5>Aerial view of Hiroshima before the bombing</h5>
-![aerialpre-war](https://cdn.theatlantic.com/assets/media/img/photo/2016/05/hiroshima-before-and-after-the-atom/h05_0296/main_1200.jpg?1463075248) [2](#two) Courtesy of U.S. National Archives
+<h4>__Aerial view of Hiroshima before the bombing__ _Courtesy of U.S. National Archives_</h4>  
+![aerialpre-war](https://cdn.theatlantic.com/assets/media/img/photo/2016/05/hiroshima-before-and-after-the-atom/h05_0296/main_1200.jpg?1463075248) [2](#two)
 
-<h5>Aerial view of Hiroshima after the bombing</h5>
+<h4>Aerial view of Hiroshima after the bombing</h4>
 ![aerialpostwar](https://cdn.theatlantic.com/assets/media/img/photo/2016/05/hiroshima-before-and-after-the-atom/h24_AP4501010344/main_1200.jpg?1463072082) [3]
 
 
 
-<h3>Map of Significant Post-War Structures</h3>
-The purpose of showing the markers and areas is to compare and contrast Pre-war and Post-war Hiroshima, and their differences in meaning contained in the geography, which fit it into a larger discussion of the Post-war narrative in Japan. On the map, it is easy to see which buildings were deemed important after the bombing, as well as which historically important buildings were transformed in meaning.
+<h3>__Map of Significant Post-War Structures__</h3>
+The purpose of showing the markers and areas is to compare and contrast Pre-war and Post-war Hiroshima and their differences in meaning contained in the geography, which fit it into a larger discussion of the Post-war narrative in Japan. Most buildings that are significant are located in or near the [Hiroshima Peace Memorial Park](http://www.pcf.city.hiroshima.jp/virtual/VirtualMuseum_e/tour_e/tour_fra_e.html), completed in 1954. In previous eras, the area had been a commercial centre of trade, and during Hiroshima’s transition to capitalism it served as a commercial and political centre home to City Hall. After the __1949 Reconstruction Law__,it was decided that the area would become a peace memorial, and is now home to 60 buildings and monuments dedicated to remembrance of the destruction caused by nuclear weapons. On the map, it is easy to see which buildings were deemed important after the bombing, as well as which historically important buildings were transformed in meaning.
 
-
-
-
+Red = Old structure
+Blue = New structure
+Green = Rebuilt/replaced structure
 <div class="markers">
   <!-- these buttons hide/show all the markers  -->
   <!-- to hide/show blue or red markers instead, change my_markers below to blue_markers
@@ -35,8 +35,18 @@ The purpose of showing the markers and areas is to compare and contrast Pre-war 
   <div id="map_legend"></div>
 </div>
 
+
+<div class="cleared"></div>
+
+<h3>Interpretation of the Map</h3>
+The older structures mostly stayed physically identical prior to the bomb, but most of them have been repurposed (Bank, A-bomb Dome).
+The new structures, apart from housing and non-political buildings, resemble the new ideology by being dedicated to peace (Peace Memorial Park and the 60 memorials within, Memorial Museum).
+Other structures had been rebuilt to look like they had previously, and rebuilt to include their purpose relating to their relationship to the atomic bomb (Hiroshima Castle, Rest House, Shima Hospital).
+The cluster of significant buildings are located close to the hypo-center itself.
+
+
 <h3>A New Narrative</h3>
-History is a collection of narratives, and the new geography of Hiroshima tells a narrative by infusing the space with meaning. The narrative is that of a lotus flower; rising from the ashes; becoming something from nothing. It is a narrative that has a beginning, and that beginning is the bomb, therefore it ignores many complexities of WWII and the role Japan had in it. The story has a happy ending, despite the thousands who died, because it ends as a world without war. The official flower is an Oleander because it was the first blossoming after the bomb; this is how integrated the bomb is in Hiroshima memory.[4](#four)
+History is a collection of narratives, and the new geography of Hiroshima tells a new narrative by infusing the space with meaning. That narrative is that of a lotus flower; rising from the ashes; becoming something from nothing. It is a narrative that has a beginning, and that beginning is the bomb, therefore it ignores many complexities of WWII and the role Japan had in it. The story has a happy ending, despite the thousands who died, because it ends as a world without war. The official flower is an Oleander because it was the first blossoming after the bomb; this is how integrated the bomb is in Hiroshima memory.[4](#four)
 
 <h3>Reconstruction</h3>
 
@@ -100,3 +110,5 @@ Though peace was used as a pacifying method in order to have a universal languag
 <a id="#16">16: </a> [ibid, pg 360.][10]
 
 <a id="#17">17: </a> ["Story of cities #24: how Hiroshima rose from the ashes of nuclear destruction." _The Guardian_. April 18, 2016.][5]
+
+<a id="#18">18: </a> [Schafer, Stephanie. "From Geisha girls to the Atomic Bomb Dome: Dark tourism and the formation of Hiroshima memory." _The Tourist and the Local_, vol 16, #4. December 2016. pg 353.][10]

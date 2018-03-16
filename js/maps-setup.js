@@ -3,7 +3,7 @@
 // whenever we need to -- they have 'global scope'
 var my_map; // this will hold the map
 var my_map_options; // this will hold the options we'll use to create the map
-var my_center = new google.maps.LatLng(34.385203, 132.455293); // center of map
+var my_center = new google.maps.LatLng(34.395598, 132.454918); // center of map
 var my_markers = []; // we use this in the main loop below to hold the markers
 // this one is strange.  In google maps, there is usually only one
 // infowindow object -- its content and position change when you click on a
@@ -15,9 +15,34 @@ var legendHTML = "<h1>Legend</h1>";
 // to make multi-colored markers
 var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
 var redURL = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+var greenURL = "http://maps.google.com/mapfiles/ms/icons/green-dot.png";
+var hypocentre = {
+    scale:4,
+    strokeColor:"red",
+    strokeWeight: 4,
+    path:google.maps.SymbolPath.CIRCLE,
+
+ }
 var red_markers = [];
 var blue_markers = [];
 
+ var bombradius = new google.maps.Circle({
+ strokeColor:'#ffe347',
+ strokeOpacity: 0.8,
+ strokeWeight: 1,
+ fillColor:'#ffe347',
+ fillOpacity: 0.3,
+ map: my_map,
+ center:{"lat":34.394720, "lng":132.454712},
+ radius:500,
+ window_content:"<p>total reach of the Atomic Bomb</p>"
+});
+
+google.maps.event.addListener(bombradius, 'click', function (evt) {
+infowindow.setContent(this.window_content);
+infowindow.setPosition(this.getCenter());
+infowindow.open(my_map);
+});
 // this is for fun, if you want it.  With this powerful feature you can add arbitrary
 // data layers to your map.  It's cool. Learn more at:
 // https://developers.google.com/maps/documentation/javascript/datalayer#load_geojson
@@ -31,22 +56,15 @@ var myGeoJSON= {
                 "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
                                 [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
                                 [-85.60546875,49.03786794532644]]]}},
-   {"type":"Feature",
-    "properties":{myColor: 'green'},
-    "myColor" : "green",
-     "geometry":{"type":"Polygon",
-                 "coordinates":[[[-113.203125,58.35563036280967],[-114.78515624999999,51.944264879028765],
-                                 [-101.6015625,51.944264879028765],[-112.32421875,58.263287052486035],
-                                 [-113.203125,58.35563036280967]]]
-                }}]};
+]};
 
 /* a function that will run when the page loads.  It creates the map
  and the initial marker.  If you want to create more markers, do it here. */
 function initializeMap() {
     my_map_options = {
         center:  my_center, // to change this value, change my_center above
-        zoom: 9,  // higher is closer-up
-        mapTypeId: google.maps.MapTypeId.HYBRID // you can also use TERRAIN, STREETMAP, SATELLITE
+        zoom: 15,  // higher is closer-up
+        mapTypeId: google.maps.MapTypeId.STREETMAP // you can also use TERRAIN, STREETMAP, SATELLITE
     };
 
     // this one line creates the actual map
@@ -55,95 +73,82 @@ function initializeMap() {
     // this is an *array* that holds all the marker info
     var all_my_markers =
             [
-              {position: new google.maps.LatLng(34.393638, 132.464921),
+              {position: new google.maps.LatLng(34.394822, 132.454782),
                 map: my_map,
-                icon: blueURL, // this sets the image that represents the marker in the map to the one
-                               // located at the URL which is given by the variable blueURL, see above
+                icon: greenURL,
                 title: "Shima Hospital",
-                window_content: "<h4>Shima Hospital (ground zero)</h4><p> SHima Hospital</p>"
+                window_content:""
+
+
               },
-              {position: new google.maps.LatLng(34.393180, 132.456568),
+              {position: new google.maps.LatLng(34.394205, 132.451853),
                 map: my_map,
                 icon: blueURL, // this sets the image that represents the marker in the map
                 title: "Monument in memory of the Korean victims of the A-bomb",
-                window_content: "<h4>Monument in Memory of the Korean Victims of the A-bomb</h4><p> Completed april 10 1970 <img src=http://www.pcf.city.hiroshima.jp/virtual/img/irei_img/tour_11.jpg/> </p>"
+                window_content:""
               },
-              {position: new google.maps.LatLng(34.403020, 132.469574),
+              {position: new google.maps.LatLng(34.394720, 132.454712),
                 map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
+                icon: hypocentre, // this sets the image that represents the marker in the map
+                title: "Hypocenter",
+                window_content:""
+},
+
+              {position: new google.maps.LatLng(34.401510, 132.459605),
+                map: my_map,
+                icon: greenURL, // this sets the image that represents the marker in the map
                 title: "Hiroshima Castle",
                 window_content: '<h4>Hiroshima Castle</h4>'
               },
-              {position: new google.maps.LatLng(34.403020, 132.469574),
-                map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
-                title: "Peace Bell",
-                window_content: '<h4>Peace Bell</h4>'
-              },
-              {position: new google.maps.LatLng(34.403020, 132.469574),
+
+              {position: new google.maps.LatLng(34.391582, 132.456660),
                 map: my_map,
                 icon: redURL, // this sets the image that represents the marker in the map
                 title: "Hiroshima Branch of Old Japan Bank",
                 window_content: '<h4>Hiroshima Branch of Old Japan Bank</h4>'
               },
-              {position: new google.maps.LatLng(34.400407, 132.457733),
+
+              {position: new google.maps.LatLng(34.393746, 132.453351),
                 map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
-                title: "Teramachi Street",
-                window_content: '<h4>Teramachi Street</h4>'
-              },
-              {position: new google.maps.LatLng(34.411365, 132.240680),
-                map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
+                icon: greenURL, // this sets the image that represents the marker in the map
                 title: "Rest House",
                 window_content: '<h4>Rest House</h4>'
               },
-              {position: new google.maps.LatLng(34.389023, 132.473282),
+              {position: new google.maps.LatLng(34.403215, 132.455464),
                 map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
-                title: "Motomachi",
-                window_content: '<h4>Motomachi</h4>'
+                icon: greenURL, // this sets the image that represents the marker in the map
+                title: "Moto-machi",
+                window_content: '<h4>Moto-machi</h4>'
               },
-              {position: new google.maps.LatLng(34.395483, 132.453592),
+              {position: new google.maps.LatLng(34.395490, 132.453575),
                 map: my_map,
                 icon: redURL, // this sets the image that represents the marker in the map
-                title: "Atomic Bomb Dome/",
+                title: "Atomic Bomb Dome/Genbaku Dome",
                 window_content: '<h4>Atomic Bomb Dome/Genbaku Dome/</h4>'
               },
-              {position: new google.maps.LatLng(34.400407, 132.457733),
+              {position: new google.maps.LatLng(34.391506, 132.453146),
                 map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
+                icon: blueURL, // this sets the image that represents the marker in the map
                 title: "Peace Memorial Museum",
                 window_content: '<h4>Peace Memorial Museum</h4>'
               },
-              {position: new google.maps.LatLng(34.400407, 132.457733),
+              {position: new google.maps.LatLng(34.397790, 132.47534),
                 map: my_map,
                 icon: redURL, // this sets the image that represents the marker in the map
                 title: "Hiroshima Station",
                 window_content: '<h4>Hiroshima Station</h4>'
               },
-              {position: new google.maps.LatLng(34.400407, 132.457733),
+              {position: new google.maps.LatLng(34.390419, 132.456423),
                 map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
-                title: "Methodist Church",
-                window_content: '<h4>Methodist Church</h4>'
-              },
-              {position: new google.maps.LatLng(34.400407, 132.457733),
-                map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
+                icon: greenURL, // this sets the image that represents the marker in the map
                 title: "Shirakami-Sha Shrine",
                 window_content: '<h4>Shirakami-Sha Shrine</h4>'
               },
-              {position: new google.maps.LatLng(34.400407, 132.457733),
-                map: my_map,
-                icon: redURL, // this sets the image that represents the marker in the map
-                title: "Ujina Harbour",
-                window_content: '<h4>Ujina Harbour</h4>'
-              }
+
 
             ];
 
-    for (j = 0; j < all_my_markers.length; j++) {
+        for (j = 0; j < all_my_markers.length; j++) {
         var marker =  new google.maps.Marker({
             position: all_my_markers[j].position,
             map: my_map,

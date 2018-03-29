@@ -8,7 +8,7 @@
 /* We start with the spatial history assignment */
 
 /* add any styling for the main div here */
-img {
+#map_legend img {
   height: 250px;
   width: 400px;
 
@@ -149,6 +149,7 @@ div.gm-style-iw blockquote {
    padding: 10px;
 }
 #popcorn-container img {
-  max-width:400px;
-  
+  height:auto;
+  width:100%;
+
 }
